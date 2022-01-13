@@ -1,3 +1,3 @@
 # TailwindCSS
-A tailwind CSS project
-Responsive on all screens
+# A tailwind CSS project
+# Responsive on all screens
