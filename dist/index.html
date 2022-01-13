@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MicroAPI</title>
+  <link rel="shortcut icon" href="./img/modules.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans h-screen">
+  <!-- NAVBAR -->
+  <div class="bg-white flex w-screen fixed top-0 right-0 left-0 z-50">
+    <nav class=" flex w-full shadow-sm h-16 justify-center">
+      <a href="#" class="ml-4 md:ml-8 lg:ml-16 lg:mr-64 mt-8 text-lg font-bold">
+        MicroAPI
+      </a>
+      <span class="ml-16 md:ml-96 lg:ml-32 mt-8">
+        <a href="#" class="lg:ml-64 lg:mr-8">
+          Log In
+        </a>
+        <a href="#" class="bg-green-600 text-green-100 w-8 h-8 ml-4 p-2 border rounded">
+          Register
+        </a>
+        <span />
+
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <div class="flex flex-col justify-center items-center w-full h-96 bg-green-500 opacity-90">
+    <p class="text-3xl md:text-5xl text-white capitalize mr-28 md:mr-64 tracking-wider">
+      Connect with
+    </p>
+    <span class="flex flex-row mt-2">
+      <a href="#" class="hover:bg-blue-200 rounded-lg">
+        <svg width="70" height="60" viewBox="0 0 394 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M377.634 0.0263672H15.7348C7.03147 0.0263672 0 5.73071 0 12.7913V306.386C0 313.446 7.03147 319.151 15.7348 319.151H377.634C386.338 319.151 393.369 313.446 393.369 306.386V12.7913C393.369 5.73071 386.338 0.0263672 377.634 0.0263672ZM332.2 93.1708H300.78C276.145 93.1708 271.375 102.665 271.375 116.626V147.382H330.184L322.513 195.53H271.375V319.151H210.059V195.57H158.774V147.382H210.059V111.879C210.059 70.6725 241.086 48.2141 286.422 48.2141C308.155 48.2141 326.791 49.5305 332.249 50.1289V93.1708H332.2Z"
+            fill="#3B5998" />
+        </svg>
+      </a>
+      <a href="#" class="hover:bg-red-300 rounded-lg">
+        <svg width="70" height="60" viewBox="0 0 362 321" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M347.479 0.921875H14.7412C6.73918 0.921875 0.274292 6.62622 0.274292 13.6869V307.281C0.274292 314.342 6.73918 320.046 14.7412 320.046H347.479C355.481 320.046 361.946 314.342 361.946 307.281V13.6869C361.946 6.62622 355.481 0.921875 347.479 0.921875ZM197.612 204.683C177.765 229.335 137.89 236.515 106.787 225.944C75.5925 215.453 53.4401 186.373 56.1074 156.734C56.7855 120.474 94.6255 88.6811 135.72 89.9177C155.432 89.1199 173.967 96.6592 189.067 107.31C182.602 113.772 175.956 119.995 168.813 125.779C150.685 114.73 124.87 111.578 106.741 124.343C80.7915 140.18 79.6161 177.557 104.571 194.59C128.849 214.017 174.736 204.364 181.472 174.605C166.282 174.406 151.001 174.605 135.811 174.167C135.766 166.149 135.72 158.17 135.766 150.152C161.173 150.073 186.626 150.033 212.078 150.232C213.57 169.1 210.722 189.125 197.612 204.683ZM307.243 170.257C299.648 170.337 292.053 170.377 284.458 170.417C284.368 177.118 284.322 183.82 284.322 190.522H261.582C261.492 183.82 261.492 177.158 261.447 170.457C253.852 170.377 246.256 170.337 238.661 170.257V150.272C246.256 150.192 253.852 150.152 261.447 150.152C261.492 143.451 261.582 136.749 261.628 130.048H284.322L284.458 150.152C292.053 150.232 299.648 150.232 307.243 150.272V170.257Z"
+            fill="#DD4B39" />
+        </svg>
+      </a>
+      <a href="#" class="hover:bg-blue-100 rounded-lg">
+        <svg width="70" height="60" viewBox="0 0 389 342" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M373.44 0H15.56C6.95337 0 0 6.11325 0 13.68V328.32C0 335.887 6.95337 342 15.56 342H373.44C382.047 342 389 335.887 389 328.32V13.68C389 6.11325 382.047 0 373.44 0ZM299.19 123.847C299.336 125.856 299.336 127.951 299.336 130.003C299.336 192.76 244.973 265.05 145.632 265.05C114.998 265.05 86.6011 257.227 62.6776 243.761C67.0539 244.188 71.2356 244.359 75.7091 244.359C100.994 244.359 124.237 236.835 142.763 224.096C119.034 223.668 99.0977 209.988 92.2902 191.178C100.605 192.247 108.093 192.247 116.651 190.323C104.433 188.141 93.4512 182.307 85.5711 173.812C77.691 165.318 73.3988 154.687 73.4238 143.726V143.127C80.5716 146.675 88.9838 148.855 97.7849 149.155C90.3862 144.82 84.3186 138.947 80.12 132.056C75.9213 125.166 73.7215 117.471 73.7155 109.654C73.7155 100.805 76.3413 92.7248 81.0579 85.7138C94.6195 100.391 111.542 112.396 130.727 120.947C149.911 129.498 170.927 134.404 192.409 135.347C184.775 103.07 212.2 76.95 245.167 76.95C260.727 76.95 274.731 82.6785 284.602 91.9125C296.807 89.9033 308.477 85.8848 318.883 80.4982C314.847 91.485 306.386 100.762 295.154 106.618C306.046 105.592 316.549 102.942 326.274 99.2228C318.931 108.713 309.741 117.135 299.19 123.847Z"
+            fill="#1DA1F2" />
+        </svg>
+      </a>
+      <a href="#" class="hover:bg-blue-200 rounded-lg">
+        <svg width="70" height="60" viewBox="0 0 384 335" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M342.857 0H41.1429C18.4286 0 0 16.077 0 35.8929V299.107C0 318.923 18.4286 335 41.1429 335H342.857C365.571 335 384 318.923 384 299.107V35.8929C384 16.077 365.571 0 342.857 0ZM237.686 286.919C230.486 288.04 227.829 284.152 227.829 280.936C227.829 276.898 228 256.26 228 239.585C228 227.92 223.543 220.517 218.314 216.628C250.029 213.562 283.457 209.749 283.457 161.967C283.457 148.357 277.886 141.552 268.8 132.804C270.257 129.588 275.143 116.353 267.343 99.154C255.429 95.9386 228.171 112.539 228.171 112.539C216.857 109.772 204.6 108.352 192.514 108.352C180.429 108.352 168.171 109.772 156.857 112.539C156.857 112.539 129.6 95.9386 117.686 99.154C109.886 116.278 114.686 129.513 116.229 132.804C107.143 141.552 102.857 148.357 102.857 161.967C102.857 209.525 134.829 213.562 166.543 216.628C162.429 219.844 158.743 225.377 157.457 233.304C149.314 236.519 128.486 242.052 116.057 222.91C108.257 211.095 94.2 210.123 94.2 210.123C80.3143 209.973 93.2571 217.75 93.2571 217.75C102.514 221.489 109.029 235.846 109.029 235.846C117.343 258.055 157.114 250.577 157.114 250.577C157.114 260.971 157.286 277.871 157.286 280.936C157.286 284.152 154.714 288.04 147.429 286.919C90.8571 270.393 51.2571 223.433 51.2571 168.547C51.2571 99.9018 111.429 47.7824 190.114 47.7824C268.8 47.7824 332.571 99.9018 332.571 168.547C332.657 223.433 294.257 270.468 237.686 286.919ZM153.6 241.23C151.971 241.529 150.429 240.931 150.257 239.959C150.086 238.837 151.2 237.865 152.829 237.566C154.457 237.416 156 238.015 156.171 238.987C156.429 239.959 155.314 240.931 153.6 241.23ZM145.457 240.557C145.457 241.529 144.171 242.352 142.457 242.352C140.571 242.501 139.286 241.679 139.286 240.557C139.286 239.585 140.571 238.762 142.286 238.762C143.914 238.613 145.457 239.435 145.457 240.557ZM133.714 239.734C133.371 240.706 131.657 241.155 130.2 240.706C128.571 240.407 127.457 239.286 127.8 238.314C128.143 237.342 129.857 236.893 131.314 237.192C133.029 237.641 134.143 238.762 133.714 239.734ZM123.171 235.696C122.4 236.519 120.771 236.369 119.486 235.248C118.2 234.276 117.857 232.855 118.714 232.182C119.486 231.359 121.114 231.509 122.4 232.631C123.514 233.603 123.943 235.098 123.171 235.696ZM115.371 228.892C114.6 229.34 113.143 228.892 112.2 227.77C111.257 226.648 111.257 225.377 112.2 224.854C113.143 224.181 114.6 224.704 115.371 225.826C116.314 226.948 116.314 228.294 115.371 228.892ZM109.8 221.638C109.029 222.311 107.743 221.937 106.8 221.19C105.857 220.218 105.686 219.096 106.457 218.573C107.229 217.9 108.514 218.273 109.457 219.021C110.4 219.993 110.571 221.115 109.8 221.638ZM104.057 216.105C103.714 216.778 102.6 216.927 101.657 216.404C100.543 215.955 100.029 215.133 100.371 214.46C100.714 214.011 101.657 213.787 102.771 214.161C103.886 214.684 104.4 215.507 104.057 216.105Z"
+            fill="#F5F5F5" />
+        </svg>
+      </a>
+    </span>
+    <p class="text-xl md:text-3xl text-white capitalize tracking-wide mt-1">
+      And more!
+    </p>
+    <p class="font-thin text-base text-white tracking-wider mt-2 underline cursor-pointer hover:text-blue-300">
+      or use your email address
+    </p>
+  </div>
+
+  <!-- FORM -->
+  <div class="bg-gray-100 flex justify-center w-full py-4">
+    <form action="#"
+      class="bg-white text-xs md:text-base flex flex-col w-11/12 md:w-2/3 lg:w-5/12 border rounded shadow-md">
+
+      <div class="mx-auto w-5/6 h-10 mt-4">
+        <label for="email" class="">Email</label>
+        <input type="email" name="email" id="mail"
+          class="border-2 border-gray-300 rounded w-full h-10 focus:outline-none focus:border-blue-200 focus:rounded">
+      </div>
+      <div class="mx-auto w-5/6 h-10 mt-8">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="pass"
+          class="border-2 border-gray-300 rounded w-full h-10 focus:outline-none focus:border-blue-200 focus:rounded">
+      </div>
+      <span class="mt-4 ml-6 md:ml-10 p-2 text-gray-400">
+        <a href="#" class="hover:text-blue-300">
+          Forgot your password?
+        </a>
+      </span>
+      <div class="flex flex-col items-center">
+        <button class="bg-red-600 text-white border border-red-300 rounded w-8/12 h-10 p-2 my-4">
+          <a href="#">
+            Log In
+          </a>
+        </button>
+        <span class="uppercase text-gray-600 font-bold md:mt-4">
+          or
+        </span>
+        <button class="bg-blue-700 text-white border border-blue-300 rounded w-8/12 h-10 p-2 pb-8 my-4 md:mt-8">
+          <a href="#">
+            <img src="img/facebook-512.png" alt="facebook" class="inline w-8 h-8 text-blue-400">
+            <span class="lg:ml-2">Continue with Facebook</span>
+          </a>
+        </button>
+        <button class="bg-blue-500 text-white border border-blue-300 rounded w-8/12 h-10 p-2 pb-8 md:mt-8">
+          <a href="#">
+            <img src="img/google-152-189813.png" alt="google" class="inline w-8 h-8 text-blue-400">
+            <span class="lg:ml-4">Continue with Google</span>
+          </a>
+        </button>
+      </div>
+      <p class="text-center mx-4 md:mx-16 text-gray-400 my-4 tracking-wider">
+        By continuing,you agree to MicroAPI's <span class="text-gray-600 cursor-pointer hover:text-blue-300">
+          Terms of Service, Privacy Policy
+        </span>
+      </p>
+      <p class="text-center text-gray-500 tracking-wider mb-2">
+        Not on MicroAPI yet? <a href="#" class="capitalize hover:text-blue-300">
+          sign up
+        </a>
+      </p>
+
+    </form>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="flex justify-center items-center w-full bg-white my-4 p-8">
+    <p class="text-sm md:text-base md:mx-32 md:my-8 text-center leading-relaxed tracking-wider">
+      Get scalable authentication built right into your application without the development overhead, security risks,
+      and maintenance that come from building it yourself. Our API allows your team to deploy user authentication to
+      your application in a matter of minutes – not days.
+    </p>
+  </div>
+
+  <!-- IMAGE AND TEXT -->
+  <div class="bg-gray-100 w-full py-8 px-2">
+    <div class="flex flex-col md:flex-row justify-evenly content-center items-center w-full md:w-5/6 mx-auto">
+      <div class="text-center text-sm md:text-base">
+        <h1 class="text-xl md:text-2xl">
+          Reduced Operational Cost
+        </h1>
+        <p class="my-6 md:mr-8">
+          Our API Saves you month of integration testing and support headache for you and your customers.
+        </p>
+      </div>
+      <img src="img/photodune-12772856-diverse-group-people-working-together-concept-s-600x450 3.png" alt="diversity"
+        class="w-5/6 h-48 md:w-72 md:h-72 md:my-4">
+    </div>
+  </div>
+
+  <!-- SECURITY -->
+  <div class="flex flex-col md:flex-row justify-around items-center lg:p-20 w-full my-16">
+    <div
+      class="text-center tracking-wider leading-relaxed p-4 lg:p-8 cursor-pointer hover:bg-blue-300 border rounded hover:underline w-11/12 md:w-1/3 lg:w-1/3">
+      <h2 class="text-base md:text-xl text-gray-800 font-semibold">
+        SOCIAL LOGIN
+      </h2>
+      <p class="text-gray-600 text-sm md:text-base">Take the headache out of social login with MicroAPI's social login
+        support. We handle the
+        connections and provide an easy way for your users to log in with a social account.
+      </p>
+    </div>
+    <div
+      class="text-center tracking-wider leading-relaxed p-4 lg:p-8 cursor-pointer hover:bg-blue-300 border rounded hover:underline w-11/12 md:w-1/3 lg:w-1/3 my-6 md:mx-1 lg:mx-0 md:my-0">
+      <h2 class="text-base md:text-xl text-gray-800 font-semibold">
+        MULTI FACTOR
+      </h2>
+      <p class="text-gray-600 text-sm md:text-base">Multi-factor Authentication (sometimes called two-factor
+        authentication) is a best
+        practice that adds another layer of security to your user login.
+      </p>
+    </div>
+    <div
+      class="text-center tracking-wider leading-relaxed p-4 lg:p-8 cursor-pointer hover:bg-blue-300 border rounded hover:underline w-11/12 md:w-1/3 lg:w-1/3">
+      <h2 class="text-base md:text-xl text-gray-800 font-semibold">
+        PASSWORDLESS AUTHENTICATION
+      </h2>
+      <p class="text-gray-600 text-sm md:text-base">Eliminate the risk of password-based attacks and deliver a seamless
+        user experience using
+        passwordless authentication.
+      </p>
+    </div>
+  </div>
+
+  <!-- VERIFIED -->
+  <div class="text-xs md:text-base bg-gray-100 flex flex-col justify-evenly text-center w-full h-1/2">
+    <p>
+      Token-based authentication
+      <img src="img/Vector.png" alt="verified" class="inline-block w-4 h-4">
+    </p>
+    <p>
+      Passwordless authentication
+      <img src="img/Vector.png" alt="verified" class="inline-block w-4 h-4">
+    </p>
+    <p>
+      Pre-built login and registration screens
+      <img src="img/Vector.png" alt="verified" class="inline-block w-4 h-4">
+    </p>
+    <p>
+      A hosted user database that you control
+      <img src="img/Vector.png" alt="verified" class="inline-block w-4 h-4">
+    </p>
+    <p>
+      Customizable verification + welcome emails
+      <img src="img/Vector.png" alt="verified" class="inline-block w-4 h-4">
+    </p>
+    <p>
+      A complete user admin UI to manage your users
+      <img src="img/Vector.png" alt="verified" class="inline-block w-4 h-4">
+    </p>
+    <p>
+      Built-in account verification & password reset flows
+      <img src="img/Vector.png" alt="verified" class="inline-block w-4 h-4">
+    </p>
+    <p>
+      Strong password security, enforcement and encryption
+      <img src="img/Vector.png" alt="verified" class="inline-block w-4 h-4">
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="flex flex-col justify-between text-center w-full h-1/3 p-8">
+    <button class="bg-green-600 uppercase text-green-100 h-10 w-36 border rounded mx-auto">
+      Get started
+    </button>
+    <p>
+      Copyright &copy; 2021
+    </p>
+  </div>
+
+</body>
+
+</html>
